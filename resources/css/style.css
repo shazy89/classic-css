@@ -1,0 +1,102 @@
+/*   */
+/* Basic setup  */
+/*   */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  background-color: #fff;
+  color: #555555;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+/* < ------------------------------- >*/
+/* Reusable Components  */
+/* < ------------------------------- >*/
+
+.row {
+  max-width: 1140px;
+  /* top bottom , left right*/
+  margin: 0 auto;
+}
+
+/* Headings  */
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #fff;
+  font-size: 300%;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 4px;
+}
+
+/* Buttons  */
+
+/* Buttons in css can have "link, visitet, active and howerd" and we can use sudoclases for it*/
+/* if you want to change something after its visited use it separately*/
+.btn:visited,
+.btn:link {
+  display: inline-block;
+  padding: 10px 30px;
+  font-weight: 300;
+  /* Will remove the underline from the links  */
+  text-decoration: none;
+
+  border-radius: 200px;
+  /*Css 3 bg color will change after that many seconds  */
+  transition: background-color 0.4s border 0.4, color 0.3;
+}
+
+.btn-full:visited,
+.btn-full:link {
+  background-color: #e67e22;
+  border: 1px solid #e67e22;
+  color: #fff;
+  margin-right: 15px;
+}
+.btn-ghost:visited,
+.btn-ghost:link {
+  border: 1px solid #e67e22;
+  color: #e67e22;
+}
+.btn:hover,
+.btn:active {
+  background-color: #cf6d17;
+}
+.btn-full:hover,
+.btn-full:active {
+  border: 1px solid #e67e22;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  border: 1px solid #e67e22;
+  color: #fff;
+}
+
+/* < ------------------------------- >*/
+/* Header  */
+/* < ------------------------------- >*/
+header {
+  /* linear-gradient() for transparancy - mix 2 colors*/
+  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.096)),
+    url(img/hero.jpg);
+  /* fill the screen with the background image*/
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+.hero-text-box {
+  position: absolute;
+  width: 1140px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
