@@ -188,3 +188,39 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+/* < ------------------------------- >*/
+/* Meals  */
+/* < ------------------------------- >*/
+
+.section-meals {
+  padding: 0;
+}
+.meals-showcase {
+  list-style: none;
+  width: 100%;
+}
+.meals-showcase li {
+  display: block;
+  float: left;
+  width: 25%;
+}
+.meal-photo {
+  width: 100%;
+  margin: 0;
+  background-color: #000;
+  /*  will se the image that is juts a pard of the container */
+  overflow: hidden;
+}
+.meal-photo img {
+  opacity: 0.7;
+  width: 100%;
+  height: auto;
+  /*  we are zooming in to the image */
+  transform: scale(1.15);
+  /*  transition will add animation to the image - this will transform back after 0.5 seconds*/
+  transition: transform 0.5s, opacity 0.5s;
+}
+.meal-photo img:hover {
+  opacity: 1;
+  transform: scale(1.03);
+}
