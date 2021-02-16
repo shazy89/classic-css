@@ -14,7 +14,17 @@ html {
   font-weight: 300;
   text-rendering: optimizeLegibility;
 }
-
+/*  AFTER USING FLOAT WE MUST CLEAR THE FLOAT ALWAYS ON PARANT ELEMENT OF FLOAT USE this "clearfix" and this will take care of it */
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  content: ".";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
 /* < ------------------------------- >*/
 /* Reusable Components  */
 /* < ------------------------------- >*/
@@ -230,4 +240,55 @@ header {
 .meal-photo img:hover {
   opacity: 1;
   transform: scale(1.03);
+}
+/* < ------------------------------- >*/
+/* HOW IT WORKS  */
+/* < ------------------------------- >*/
+
+.section-steps {
+  background-color: #f4f4f4;
+}
+
+/* <----- sudo for childs ----- >*/
+.steps-box:first-child {
+  text-align: right;
+  padding-right: 3%;
+  margin-top: 30px;
+}
+
+.steps-box:last-child {
+  text-align: left;
+  padding-left: 3%;
+  margin-top: 70px;
+}
+.app-screen {
+  width: 40%;
+}
+
+.works-step {
+  margin-bottom: 50px;
+}
+/*  This will select just the lastone and add pixels */
+.works-step:last-of-type {
+  margin-bottom: 80px;
+}
+.works-step div {
+  color: #e67e22;
+  border: 2px solid #e67e22;
+  /*  To make sure that element dosnt force a line break and number can be side by side with text */
+  display: inline-block;
+  border-radius: 50%;
+  height: 54px;
+  width: 54px;
+  text-align: center;
+  padding: 5px;
+  font-size: 150%;
+  margin-right: 25px;
+  float: left;
+}
+
+.btn-app img {
+  height: 50px;
+  width: auto;
+  margin-right: 20px;
 }
