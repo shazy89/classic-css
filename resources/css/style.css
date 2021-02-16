@@ -322,7 +322,10 @@ header {
   margin-right: 25px;
   float: left;
 }
-
+.btn-app:link,
+.btn-full:visited {
+  border: none;
+}
 .btn-app img {
   height: 50px;
   width: auto;
