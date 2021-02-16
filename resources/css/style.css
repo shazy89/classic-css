@@ -82,7 +82,7 @@ h2:after {
   font-size: 90%;
   line-height: 145%;
 }
-/* Buttons  */
+/* -----Buttons -----  */
 
 /* Buttons in css can have "link, visitet, active and howerd" and we can use sudoclases for it*/
 /* if you want to change something after its visited use it separately*/
@@ -123,6 +123,16 @@ h2:after {
 .btn-ghost:active {
   border: 1px solid #e67e22;
   color: #fff;
+}
+/* < ------------------------------- >*/
+/* Ion Icons  */
+/* < ------------------------------- >*/
+
+.ion-icon {
+  font-size: 330%;
+  display: block;
+  color: #e67e22;
+  margin-bottom: 10px;
 }
 
 /* < ------------------------------- >*/
@@ -177,11 +187,4 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
-}
-/* < ------------------------------- >*/
-/* Ion Icons  */
-/* < ------------------------------- >*/
-
-.ion-icon {
-  font-size: 64px;
 }
