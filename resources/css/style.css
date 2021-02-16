@@ -150,7 +150,12 @@ h2:after {
 /* < ------------------------------- >*/
 header {
   /* linear-gradient() for transparancy - mix 2 colors*/
-  background-image: linear-gradient(rgba(0, 0, 0, 0.452), rgba(0, 0, 0, 0.096)),
+  background-image: -webkit-linear-gradient(
+      rgba(0, 0, 0, 0.7),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(img/hero.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   /* fill the screen with the background image*/
   background-size: cover;
@@ -162,6 +167,8 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 /* < ------------------------------- >*/
@@ -291,4 +298,18 @@ header {
   height: 50px;
   width: auto;
   margin-right: 20px;
+}
+
+/* < ------------------------------- >*/
+/* CITIES  */
+/* < ------------------------------- >*/
+.section-cities {
+  background-color: #fff;
+}
+.city-box {
+  width: 100%;
+}
+.city-box img {
+  width: 90%;
+  height: auto;
 }
