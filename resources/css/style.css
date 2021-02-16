@@ -28,14 +28,17 @@ html {
 section {
   padding: 80px 0;
 }
+.box {
+  padding: 1%;
+}
 
-/* Headings  */
+/* ----- Headings -----  */
 
 h1,
-h2 {
+h2,
+h3 {
   font-weight: 300;
   text-transform: uppercase;
-  letter-spacing: 1px;
 }
 h1 {
   margin: 0;
@@ -43,12 +46,18 @@ h1 {
   color: #fff;
   font-size: 300%;
   word-spacing: 4px;
+  letter-spacing: 1px;
 }
 h2 {
   font-size: 180%;
   word-spacing: 2px;
   text-align: center;
   margin-bottom: 30px;
+  letter-spacing: 1px;
+}
+h3 {
+  font-size: 110%;
+  margin-bottom: 15px;
 }
 
 /* After h2 indicates this will happen  */
@@ -68,6 +77,10 @@ h2:after {
   line-height: 145%;
   width: 75%;
   margin-left: 15%;
+}
+.box p {
+  font-size: 90%;
+  line-height: 145%;
 }
 /* Buttons  */
 
