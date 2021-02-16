@@ -31,17 +31,44 @@ section {
 
 /* Headings  */
 
+h1,
+h2 {
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
 h1 {
   margin: 0;
   margin-bottom: 20px;
   color: #fff;
   font-size: 300%;
-  font-weight: 300;
-  text-transform: uppercase;
-  letter-spacing: 1px;
   word-spacing: 4px;
 }
+h2 {
+  font-size: 180%;
+  word-spacing: 2px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 
+/* After h2 indicates this will happen  */
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: #cf6d17;
+  /* Every time we make a use of after sudo class we have to specify its content  */
+  content: " ";
+  width: 300px;
+  /* this will center */
+  margin: 0 auto;
+  margin-top: 30px;
+}
+/* ------- PARAGRAPHS -----  */
+.long-copy {
+  line-height: 145%;
+  width: 75%;
+  margin-left: 15%;
+}
 /* Buttons  */
 
 /* Buttons in css can have "link, visitet, active and howerd" and we can use sudoclases for it*/
