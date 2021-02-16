@@ -92,6 +92,22 @@ h2:after {
   font-size: 90%;
   line-height: 145%;
 }
+/* ----- LINKS -----  */
+a:link,
+a:visited {
+  color: #e67e22;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid #e67e22;
+  -webkit-transition: border-bottom 0.2s, color 0.2s;
+  transition: border-bottom 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
 /* -----Buttons -----  */
 
 /* Buttons in css can have "link, visitet, active and howerd" and we can use sudoclases for it*/
@@ -143,6 +159,19 @@ h2:after {
   display: block;
   color: #e67e22;
   margin-bottom: 10px;
+}
+.icon-small {
+  display: inline-block;
+  width: 30px;
+  text-align: center;
+  color: #e67e22;
+  font-size: 120%;
+  margin-right: 10px;
+
+  /*secrets to align text and icons*/
+  line-height: 120%;
+  vertical-align: middle;
+  margin-top: -5px;
 }
 
 /* < ------------------------------- >*/
@@ -324,13 +353,4 @@ header {
 .city-box h3 {
   margin: 0%;
   margin-left: 4px;
-}
-.cities-icon {
-  color: #e67e22;
-  font-size: 80%;
-  margin-right: 5px;
-}
-.city-box span {
-  color: #e67e22;
-  border-bottom: 2px solid #e67e22;
 }
