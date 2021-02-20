@@ -113,7 +113,8 @@ a:active {
 /* Buttons in css can have "link, visitet, active and howerd" and we can use sudoclases for it*/
 /* if you want to change something after its visited use it separately*/
 .btn:visited,
-.btn:link {
+.btn:link,
+input[type="submit"] {
   display: inline-block;
   padding: 10px 30px;
   font-weight: 300;
@@ -126,7 +127,8 @@ a:active {
 }
 
 .btn-full:visited,
-.btn-full:link {
+.btn-full:link,
+input[type="submit"] {
   background-color: #e67e22;
   border: 1px solid #e67e22;
   color: #fff;
@@ -138,11 +140,14 @@ a:active {
   color: #e67e22;
 }
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type="submit"]:hover,
+input[type="submit"]:active {
   background-color: #cf6d17;
 }
 .btn-full:hover,
-.btn-full:active {
+.btn-full:active,
+input[type="submit"] {
   border: 1px solid #e67e22;
 }
 .btn-ghost:hover,
@@ -448,4 +453,34 @@ cite img {
 }
 .plan-box ul li {
   padding: 5px 0;
+}
+/* < ------------------------------- >*/
+/*  FORM */
+/* < ------------------------------- >*/
+
+.contact-form {
+  width: 60%;
+  /* Center this inside its element */
+  margin: 0 auto;
+}
+/* its loking just for the onces that have type of text and email  */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border-radius: 3px;
+  border: 1px solid #ccc;
+}
+textarea {
+  height: 100px;
+}
+/* its loking just for the onces with the type of checkbox inside the html  */
+input[type="checkbox"] {
+  margin: 10px 5px 10px 0;
+}
+/* will remove the border when its selected  */
+*:focus {
+  outline: none;
 }
