@@ -412,15 +412,34 @@ cite img {
   margin-left: 5%;
   box-shadow: 0 2px 2px #efefef;
 }
+.plan-box div:last-child {
+  text-align: center;
+}
 .plan-box div {
   padding: 15px;
-  border-bottom: 1px solid rgb(177, 177, 177);
+  border-bottom: 1px solid rgb(216, 216, 216);
 }
 .plan-price {
   font-size: 200%;
   margin-bottom: 10px;
   font-weight: 200;
+  color: #e67e22;
+}
+.plan-price span {
+  /* This font size is child element of plan-price and will take the font size of its parent element
+     to get smaler font size we must decrese the persentage and same for other attributes
+  */
+  font-size: 30%;
+  font-weight: 300;
 }
 .plan-price-meal {
   font-size: 80%;
+}
+.plan-box ul {
+  /*  Remove the list style  */
+
+  list-style: none;
+}
+.plan-box ul li {
+  padding: 5px 0;
 }
