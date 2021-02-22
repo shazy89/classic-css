@@ -41,12 +41,9 @@ $(document).ready(function () {
           ? target
           : $("[name=" + this.hash.slice(1) + "]");
         if (target.length) {
-          $("html,body").animate(
-            {
-              scrollTop: target.offset().top,
-            },
-            3000
-          );
+          $("html,body").animate({
+            scrollTop: target.offset().top,
+          });
           return false;
         }
       }
