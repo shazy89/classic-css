@@ -203,8 +203,7 @@ header {
 /* < ------------------------------- >*/
 /* Navbar  */
 /* < ------------------------------- >*/
-.logo,
-.logo-black {
+.logo {
   height: 100px;
   width: auto;
   float: left;
@@ -212,6 +211,10 @@ header {
 }
 .logo-black {
   display: none;
+  height: 50px;
+  width: auto;
+  float: left;
+  margin-top: 5px 0;
 }
 .main-nav {
   float: right;
@@ -244,17 +247,18 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #ccc;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 2px rgb(117, 117, 117);
+}
+.main-nav {
+  margin-top: 16px;
+  /* Get rid of bulletpoints */
 }
 .sticky li a:link,
 .sticky li a:visited {
-  padding: 8px 0;
-  text-decoration: none;
+  padding: 10px 0;
+
   color: #555;
-  text-transform: uppercase;
-  font-size: 90%;
-  border-bottom: 2px solid transparent;
-  transition: border-bottom 0.3;
 }
 /* Logic!! using css - if logo is inside the sticky navbar display the logo-black  */
 .sticky .logo-black {
