@@ -101,7 +101,6 @@ a:visited {
   text-decoration: none;
   padding-bottom: 1px;
   border-bottom: 1px solid #e67e22;
-  -webkit-transition: border-bottom 0.2s, color 0.2s;
   transition: border-bottom 0.2s, color 0.2s;
 }
 
@@ -186,11 +185,6 @@ input[type="submit"] {
 /* < ------------------------------- >*/
 header {
   /* linear-gradient() for transparancy - mix 2 colors*/
-  background-image: -webkit-linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url(img/hero.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
     url(img/hero.jpg);
   /* fill the screen with the background image*/
@@ -204,8 +198,6 @@ header {
   width: 1140px;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 /* < ------------------------------- >*/
@@ -524,7 +516,6 @@ footer {
   text-decoration: none;
   border: 0;
   color: #888;
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
@@ -542,7 +533,6 @@ footer {
 .ion-social-twitter,
 .ion-social-googleplus,
 .ion-social-instagram {
-  -webkit-transition: color 0.2s;
   transition: color 0.2s;
 }
 
