@@ -203,11 +203,15 @@ header {
 /* < ------------------------------- >*/
 /* Navbar  */
 /* < ------------------------------- >*/
-.logo {
+.logo,
+.logo-black {
   height: 100px;
   width: auto;
   float: left;
   margin-top: 20px;
+}
+.logo-black {
+  display: none;
 }
 .main-nav {
   float: right;
@@ -233,6 +237,32 @@ header {
 .main-nav li a:hover,
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
+}
+/* < STICKY NAVI >*/
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ccc;
+}
+.sticky li a:link,
+.sticky li a:visited {
+  padding: 8px 0;
+  text-decoration: none;
+  color: #555;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3;
+}
+/* Logic!! using css - if logo is inside the sticky navbar display the logo-black  */
+.sticky .logo-black {
+  display: block;
+}
+/* Logic!! using css - if logo is not inside the sticky navbar dont't display the logo  */
+.sticky .logo {
+  display: none;
 }
 /* < ------------------------------- >*/
 /* FETURES  */
