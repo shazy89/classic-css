@@ -241,6 +241,18 @@ header {
 .main-nav li a:active {
   border-bottom: 2px solid #e67e22;
 }
+/* Mobile navi */
+.mobile-nav-icon {
+  float: right;
+  margin-top: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile-nav-icon i {
+  font-size: 200%;
+  color: #fff;
+}
 /* < STICKY NAVI >*/
 .sticky {
   position: fixed;
@@ -595,9 +607,14 @@ footer p {
 /* < ------------------------------- >*/
 /*  Animations */
 /* < ------------------------------- >*/
-.js--wp-1 {
+
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
   opacity: 0;
 }
-.js--wp-1.animated {
+.js--wp-1.animated,
+.js--wp-2.animated,
+.js--wp-3.animated {
   opacity: 1;
 }
