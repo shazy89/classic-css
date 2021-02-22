@@ -10,14 +10,15 @@
   }
 }
 
-/* Small tablet to big tablets: from 768px to 1023*/
-@media only screen and (max-vidth: 1023px) {
+/* Small tablet to big tablet: from 768px to 1023px */
+@media only screen and (max-width: 1023px) {
   body {
     font-size: 18px;
   }
   section {
     padding: 60px 0;
   }
+
   .long-copy {
     width: 80%;
     margin-left: 10%;
@@ -25,8 +26,8 @@
 }
 /* Small phones to small tablets: from 681px to 767px*/
 
-@media only screen and (max-vidth: 767px) {
+@media only screen and (max-width: 767px) {
 }
 /* Smal devies*/
-@media only screen and (max-vidth: 480px) {
+@media only screen and (max-width: 480px) {
 }
