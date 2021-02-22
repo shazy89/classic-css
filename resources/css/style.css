@@ -249,6 +249,7 @@ header {
   width: 100%;
   background-color: rgb(255, 255, 255);
   box-shadow: 0 2px 2px rgb(117, 117, 117);
+  z-index: 1;
 }
 .main-nav {
   margin-top: 16px;
